@@ -16,7 +16,7 @@ namespace RaccoltaBot
 {
     public static class Program
     {
-        private static readonly TelegramBotClient Bot = new TelegramBotClient("");
+        private static readonly TelegramBotClient Bot = new TelegramBotClient(Token.Key);
 
         private static readonly string UsersFile = System.IO.Path.GetDirectoryName(Assembly.GetEntryAssembly().Location) + "\\users.dat";
 
